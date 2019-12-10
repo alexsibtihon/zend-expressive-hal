@@ -22,6 +22,9 @@ use function is_string;
 use function method_exists;
 use function sprintf;
 
+/**
+ * Class Link
+ */
 class Link implements EvolvableLinkInterface
 {
     const AS_COLLECTION = '__FORCE_COLLECTION__';
@@ -45,6 +48,11 @@ class Link implements EvolvableLinkInterface
      * @var bool Whether or not the link is templated
      */
     private $isTemplated;
+
+    /**
+     * @var string
+     */
+    private $testField;
 
     /**
      * @param string|string[] $relation One or more relations represented by this link.
